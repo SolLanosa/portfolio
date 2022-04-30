@@ -30,5 +30,17 @@
 @media (max-width:780px) {
   .portfolio {
     margin: 90px 0 20px;
+    .titleBox {
+      margin: 150px auto 0px;
+    }
+  }
+}
+
+
+@media (max-width:500px) {
+  .portfolio {
+    .titleBox {
+      margin: 188px auto 0px;
+    }
   }
 }

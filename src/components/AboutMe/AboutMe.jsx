@@ -10,11 +10,12 @@ export default function AboutMe() {
       <div className={styles.aboutBox}>
         <img src="/img/profilepic.jpg" alt="" />
         <p>
-          En búsqueda de mis primeras experiencias laborales. Soy una persona
-          autoexigente y responsable a la que le gustan los desafíos. Mi
-          objetivo es recibirme en el 2022 como abogada y continuar estudios
-          terciarios en sistemas, a la par de trabajar en experiencias
-          motivantes del mundo digital.
+          I'm looking for my first tech-work experience. I am a self-demanding
+          and responsible person who likes challenges. My goal is to graduate in
+          2022 as a lawyer and continue tertiary studies in computer science,
+          while working on motivating experiences in the digital world. In
+          between I continue traning myself doing courses and practice doing
+          personal projects.
         </p>
       </div>
     </div>

@@ -46,10 +46,12 @@
           }
     
         .linkedin {
+          stroke: rgb(11 102 194);
           &:hover,
           &:hover a:visited,
           &:hover .tooltip,
           &:hover .tooltip::before  {
+  
             background: rgb(11 102 194);
             color: #ffffff;
           }
@@ -71,8 +73,6 @@
           border-radius: 50%;
           padding: 15px;
           margin: 10px;
-          width: 30px;
-          height: 30px;
           font-size: 18px;
           display: flex;
           justify-content: center;
@@ -82,6 +82,11 @@
           cursor: pointer;
           transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
           margin-right: 40px;
+
+          a {
+            width: 21px;
+            height: 21px;
+          }
 
           &:hover {
             .tooltip, span {
@@ -143,18 +148,39 @@
   
       .socialnetwork {
         margin-top: 50px;
-
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
         .wrapper  {
           display: flex;
           align-items: center;
           justify-content: center;
           width: 90%;
+
+          .icon {
+            margin-right: 0px;
+            a {
+              width: 21px;
+              height: 21px;
+            }
+    
+          }
         }
       }
+
+     
     }
 
     .sendEmail {
      margin-right: 0px;
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
     }
   }
 }

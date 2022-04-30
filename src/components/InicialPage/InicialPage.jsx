@@ -15,7 +15,7 @@ export default function InicialPage() {
                 <a href="#aboutme-section">ABOUT ME</a>
               </li>
               <li>
-                <a href="#about-us-section">PORTFOLIO</a>
+                <a href="#portfolio-section">PORTFOLIO</a>
               </li>
               <li>
                 <a href="#skills-section">SKILLS</a>
@@ -40,7 +40,7 @@ export default function InicialPage() {
                 <a href="#aboutme-section">ABOUT ME</a>
               </li>
               <li>
-                <a href="#about-us-section">PORTFOLIO</a>
+                <a href="#portfolio-section">PORTFOLIO</a>
               </li>
               <li>
                 <a href="#skills-section">SKILLS</a>
@@ -68,7 +68,7 @@ export default function InicialPage() {
           </p>
           <p>Feel free to contact me. Any feedback is welcome.</p>
           <a href="#aboutme-section">
-            <button>CONOCER MÁS</button>
+            <button>KNOW MORE</button>
           </a>
         </div>
         <div className={styles.imagePrincipal}>
