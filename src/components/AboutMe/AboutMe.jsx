@@ -10,7 +10,7 @@ export default function AboutMe() {
       <div className={styles.aboutBox}>
         <img src="/img/profilepic.jpg" alt="" />
         <p>
-          I'm looking for my first tech-work experience. I am a self-demanding
+          I am looking for my first tech-work experience. I am a self-demanding
           and responsible person who likes challenges. My goal is to graduate in
           2022 as a lawyer and continue tertiary studies in computer science,
           while working on motivating experiences in the digital world. In
