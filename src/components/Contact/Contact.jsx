@@ -19,7 +19,11 @@ export default function Contact() {
           <ul className={styles.wrapper}>
             <li className={classNames(styles.icon, styles.linkedin)}>
               <span className={styles.tooltip}>Linkedin</span>
-              <a target="_blank" href="https://www.linkedin.com/in/sol-lanosa/">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/sol-lanosa/"
+              >
                 <span>
                   <FontAwesomeIcon icon={brands("linkedin")} />
                 </span>
@@ -27,7 +31,11 @@ export default function Contact() {
             </li>
             <li className={classNames(styles.icon, styles.github)}>
               <span className={styles.tooltip}>Github</span>
-              <a target="_blank" href="https://github.com/SolLanosa">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/SolLanosa"
+              >
                 <span>
                   <FontAwesomeIcon icon={brands("github")} />
                 </span>

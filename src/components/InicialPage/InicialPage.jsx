@@ -61,7 +61,7 @@ export default function InicialPage() {
             world<span>.</span>
           </h1>
           <p>
-            My name is Sol Lanosa. I'm a <span>Law student</span> and
+            My name is Sol Lanosa. I&apos;m a <span>Law student</span> and
             <span> Front-End web developer</span>. I started this programming
             journey 1 year ago. Visit my site where you can know more about my
             work.

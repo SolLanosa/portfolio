@@ -8,7 +8,7 @@ import useWindowSize from "../../hooks/useWindowSize.hooks";
 import Proyect from "../Proyect/Proyect";
 import styles from "./Slider.module.scss";
 
-export default (props) => {
+export const Slider = (props) => {
   const { width } = useWindowSize();
   return (
     <Swiper
@@ -28,3 +28,5 @@ export default (props) => {
     </Swiper>
   );
 };
+
+export default Slider;
