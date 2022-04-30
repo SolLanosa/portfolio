@@ -1,0 +1,89 @@
+@use "src/mixins";
+@use "src/base";
+
+
+.messageThanks {
+    @include mixins.font(base.$principal-font, bolder, 16px, black);
+    margin-top: 60px;
+}
+
+
+.form {
+    @include mixins.column;
+    @include mixins.display(center, center);
+    margin-top: 20px;
+   
+    label {
+        @include mixins.font(base.$principal-font, bolder, 12px, black);
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 300px;
+        height: 25px;
+        border-bottom: 1px solid black;
+        border-top: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        padding-left: 10px;
+        outline: none;
+        font-family: base.$principal-font;
+        font-size: 14px;
+        padding: 5px;
+        background-color: base.$light-beige;
+    }
+    
+    textarea {
+        margin: 10px 0;
+        height: 100px;
+        padding: 5px;
+        width: 300px;
+        font-family: base.$principal-font;
+        border-bottom: 1px solid black;
+        border-top: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        outline: none;
+        overflow: hidden;
+        display:block;
+        resize: none;
+        background-color: base.$light-beige;
+    }
+
+    button {
+        @include mixins.button(base.$dark-pink, base.$dark-pink, 20);
+        color: white;
+        width: 200px;
+        height: 30px;
+        margin-top: 30px;
+
+        &:hover {
+        @include mixins.button(#bb899899, #bb899899, 20);
+        }
+    }
+}
+
+@media (max-width:780px) {
+    .form {
+        @include mixins.column;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+}
+
+@media (max-width:350px) {
+    .messageThanks {
+        margin-top: 25px;
+    }
+
+    .form {
+        input {
+        width: 250px;
+    }
+        textarea {
+            width: 250px;
+        } 
+}
+   
+}

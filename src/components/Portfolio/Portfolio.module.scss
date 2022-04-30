@@ -1,0 +1,34 @@
+@use "src/mixins";
+@use "src/base";
+
+.portfolio {
+  width: 100%;
+  margin: 120px 0 50px;
+
+  .titleBox {
+    @include mixins.display(center, center);
+    @include mixins.button(base.$light-green, base.$light-green, 30);
+    @include mixins.font(base.$principal-font, bolder, 16px, base.$dark-pink);
+    min-width: 20%;
+    width: max-content;
+    padding: 5px 15px;
+    height: 40px;
+    margin: auto;
+  }
+
+  .sliderContainer {
+    width: 90%;
+    margin: auto;
+
+    @media (max-width:1367px) {
+      width: 800px;
+      max-width: 90%;
+    }
+  }
+}
+
+@media (max-width:780px) {
+  .portfolio {
+    margin: 90px 0 20px;
+  }
+}

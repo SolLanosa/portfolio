@@ -1,0 +1,122 @@
+@use "src/base";
+@use "src/mixins";
+
+.projectWrapper {
+    width: 100%;
+    min-height: 650px;
+    max-height: 650px;
+    box-sizing: border-box;
+    @include mixins.column;
+
+    .slideBox {
+        @include mixins.column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+       
+        
+        span {
+            @include mixins.font(base.$principal-font, bolder, 26px, base.$dark-pink);
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        img {
+          width: 55%;
+        }
+    }
+
+    .description {
+        width: 100%;
+        @include mixins.display( center,flex-start);
+        margin-bottom: 20px;
+        flex: 1;
+
+        p {
+            width: 450px;
+            text-align: justify;
+            @include mixins.font(base.$principal-font, none, 17px, black);
+        }
+    }
+
+    .buttonBox {
+        width: 100%;
+        @include mixins.display(center, center);
+        margin-bottom: 50px;
+
+        button {
+            @include mixins.button(base.$dark-pink, base.$dark-pink, 20);
+            @include mixins.rectangulo(150,15);
+            @include mixins.font(base.$principal-font, bolder, 15px, white);
+            @include mixins.display(center, center);
+            padding: 10px;
+            margin-left: 30px;
+
+            &:hover {
+                @include mixins.button(white, base.$dark-pink, 20);
+                color: base.$dark-pink;
+            }
+        }
+    }
+}
+
+@media (max-width:780px) {
+    .projectWrapper {
+        min-height: 600px;
+        max-height: 600px;
+        .slideBox {
+            img {
+                width: 62%;
+            }
+        }
+        .description {
+            margin-bottom: 10px;
+
+            p {
+                width: 350px;
+                text-align: justify;
+                @include mixins.font(base.$principal-font, none, 15px, black);
+            }
+        }
+
+        .buttonBox {   
+            button {
+                @include mixins.button(base.$dark-pink, base.$dark-pink, 25);
+                @include mixins.rectangulo(100,25);
+                @include mixins.font(base.$principal-font, bolder, 14px, white);
+                @include mixins.display(center, center);
+                padding: 9px;
+            }
+        }
+    }
+}
+@media (max-width:620px) {
+    .projectWrapper {
+        .slideBox {
+            img {
+                width: 65%;
+            }
+        }
+    }
+}
+
+@media (max-width: 510px) {
+    .projectWrapper {
+        min-height: 530px;
+        max-height: 530px;
+        .slideBox {
+            img {
+                width: 70%;
+            }
+        }
+        .description {
+           
+
+            p {
+                width: 290px;
+                
+                @include mixins.font(base.$principal-font, none, 13px, black);
+            }
+        }
+    }
+}

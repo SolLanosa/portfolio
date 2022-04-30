@@ -1,0 +1,78 @@
+@use "src/mixins";
+@use "src/base";
+
+.aboutme {
+  @include mixins.viewport;
+  @include mixins.column;
+  max-width: 100%;
+
+  .titleAboutMe {
+    @include mixins.display(center, center);
+    
+    h2 {
+      @include mixins.button(base.$light-green, base.$light-green, 30);
+      @include mixins.font(base.$principal-font, bolder, 23px, base.$dark-pink);
+      @include mixins.display(center, center);
+      min-width: 20%;
+      width: max-content;
+      padding: 5px 15px;
+      height: 40px;
+      margin-top: 60px;
+  
+    }
+  }
+}
+
+.aboutBox {
+  @include mixins.display(space-evenly, center);
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 10px;
+
+  p {
+    @include mixins.font(base.$principal-font, bold, 22px, base.$dark-pink);
+    text-align: justify;
+    max-width: 30%;
+    line-height: 23px;
+  }
+
+  img {
+    @include mixins.rectangulo(350, 420);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width:780px) {
+    .aboutme {
+      @include mixins.column;
+           
+      .titleAboutMe {
+        h2 {
+          margin-bottom:20px;
+        }
+      }
+
+      .aboutBox {
+        @include mixins.column;
+        justify-content:flex-start;
+
+                
+        p {
+          @include mixins.font(base.$principal-font, bold, 15px, base.$dark-pink);
+          line-height: 15px;
+          margin: 0 auto;
+          max-width: 70%;
+        }
+
+        img {
+          @include mixins.rectangulo(200, 320);
+          margin: 40px auto;
+        }
+      }
+
+    }
+}
